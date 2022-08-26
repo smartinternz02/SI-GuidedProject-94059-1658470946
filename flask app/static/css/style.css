@@ -1,0 +1,36 @@
+h1 {
+    font-family: -apple-system;
+    color: blue;
+}
+h2{
+    font-family: -apple-system;
+    color: black;
+}
+p{
+    font-family: "Monotype Corsiva", "Apple Chancery", "URW Chancery L", cursive;
+    color: black;
+    font-size: x-large;
+}
+
+.big{
+    z-index: 1;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin:0px auto;
+}
+.opacity{
+    background: url("../img/WhatsApp Image 2022-07-27 at 2.57.04 PM (1).jpeg");
+    background-size: cover;
+    display: block;
+    height: 100vh;
+    left: -5px;
+    top:-5px;
+    bottom:-5px;
+    position: fixed;
+    right: -5px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}

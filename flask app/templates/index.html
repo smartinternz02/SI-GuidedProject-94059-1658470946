@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cereal Analysis Prediction</title>
+<link rel ="stylesheet"  href="../static/css/style.css">
+
+</head>
+
+<body>
+<center>
+    <div class = "opacity"></div>
+    <div class="big">
+    <div class="login">
+
+        <h1>Cereal Analysis Prediction</h1>
+        <br>
+
+        <form action="/predict" method="post">
+
+            <select name="mfr">
+                <option disabled="disabled" selected="selected">Manufacturer</option>
+                <option value="a">A</option>
+                <option value="g">G</option>
+                <option value="k">K</option>
+                <option value="n">N</option>
+                <option value="p">P</option>
+                <option value="q">Q</option>
+                <option value="r">R</option>
+            </select>
+            <select name="type">
+                <option disabled="disabled" selected="selected">Type</option>
+                <option value="c">Cold</option>
+                <option value="h">Hot</option>
+            </select><br><br>
+            <input type="number" name="Calories" placeholder="Calories" required="required" /><br><br>
+            <input type="number" name="Protien" placeholder="Protien" required="required" /><br><br>
+            <input type="number" name="Fat" placeholder="Fat" required="required" /><br><br>
+            <input type="number" name="Sodium" placeholder="Sodium" required="required" /><br><br>
+            <input type="number" name="Fiber" placeholder="Fiber" required="required" /><br><br>
+            <input type="number" name="Carbo" placeholder="Carbo" required="required" /><br><br>
+            <input type="number" name="Sugars" placeholder="Sugars" required="required" /><br><br>
+            <input type="number" name="Potass" placeholder="Potass" required="required" /><br><br>
+            <input type="number" name="Vitamins" placeholder="Vitamins" required="required" /><br><br>
+            <input type="number" name="Shelf" placeholder="Shelf" required="required" /><br><br>
+            <input type="number" name="Weight" placeholder="Weight" required="required" /><br><br>
+            <input type="number" name="Cups" placeholder="Cups" required="required" /><br><br>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </div>
+
+        </form>
+        <br>
+        <br>
+        <p>
+            {{ z }}
+        </p>
+    </div>
+</center>
+</body>
+</html>
